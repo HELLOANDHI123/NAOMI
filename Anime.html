@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Current Favourite Animes </title>
+	<style>
+.container{
+	position: relative;
+	width: 800px;
+	height: 800px;
+	margin: 50px;
+}
+
+.image{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 1s ease;
+	background-color: orange;
+}
+
+.container:hover .overlay{
+	opacity: 1;
+}
+
+.text{
+	color: black;
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%. -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: Papyrus,fantasy;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	</style>
+</head>
+<body>
+	<h1> Current Favourite Animes </h1>
+	<button onclick = "document.location='./index.html'"> Back to Homepage </button> 
+<table>
+<tr>
+
+
+ <td> <div class = "container">
+ 	<img src = "https://www.enjpg.com/img/2020/haikyuu-11.jpg" class = "image">
+ 	<div class = "overlay">
+ 		<div class = "text"> Haikyuu!!
+ 		</div>
+ 	</div>
+ </div>
+ </td>
+
+
+
+ <td>
+ 	<div class = "container">
+ 	<img src = "https://www.enjpg.com/img/2020/the-promised-neverland-21.jpg" class = "image"> 
+ 	<div class = "overlay">
+ 		<div class = "text"> The Promised Neverland
+ 		</div>
+ 	</div>
+ </div>
+ </td>
+
+	</tr>
+<tr>
+ 	<td>
+ 		<div class = "container"> 
+ 		<img src = "https://static.wikia.nocookie.net/yowamushipedal/images/c/c7/Movie3logo.png/revision/latest?cb=20190815102717" class = "image"> 
+ 		<div class = "overlay">
+ 			<div class = "text"> Yowamushi Pedal
+ 			</div>
+ 		</div>
+ 	</div>
+ 	</td>
+
+ 	<td>
+ 		<div class = "container"> 
+ 		<img src = "https://cdn.europosters.eu/image/750/posters/my-hero-academia-season-1-i56127.jpg" class = "image">
+ 		<div class = "overlay">
+ 			<div class = "text"> My Hero Academia
+ 			</div>
+ 		</div>
+ 	</div>
+ 	</td>
+</tr>
+</table>
+	</body>
+	</html>
